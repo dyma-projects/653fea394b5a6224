@@ -10,5 +10,10 @@ export class Exercice1Component implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() { }
+  
+  miseAjourCompteur(event: { result: number }) {
+    console.log("event: ", event.result);
+    this.result = event.result;
+  }
 }
